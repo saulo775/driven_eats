@@ -1,0 +1,53 @@
+:root{
+    --background: #E5E5E5;
+    --shape: #FFFFFF;
+    
+    --red: #CF2B2B;
+    --green: #32B72F;
+
+    --text-title: #333333;
+    --text-body: #A6A6A6;
+
+
+    --button-color: #CBCBCB
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    -webkit-font-smooth: antialiased;
+}
+
+body, input, textarea, button, a, h4, h5, h6, strong {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+}
+
+h1, h2 {
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+}
+
+h3 {
+    font-weight: 700;
+}
+
+p {
+    font-weight: 300;
+}
+
+a{
+    text-decoration: none;
+    color: currentColor;
+}
+
+button, a {
+    cursor: pointer;
+}
+
