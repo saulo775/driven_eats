@@ -9,7 +9,7 @@
     --text-body: #A6A6A6;
 
 
-    --button-color: #CBCBCB
+    --button-background: #CBCBCB
 }
 
 * {
@@ -24,8 +24,6 @@ body {
 
 body, input, textarea, button, a, h4, h5, h6, strong {
     font-family: 'Roboto', sans-serif;
-    display: flex;
-    justify-content: center;
     font-weight: 400;
 }
 
