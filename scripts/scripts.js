@@ -7,8 +7,6 @@ function selectItem(item, foodCategory) {
     deselectItem(foodCategory);
     item.classList.add('active');
     cont ++;
-    console.log(cont);
-
     if (cont>=3) {
         activeButton();
     }
@@ -22,8 +20,6 @@ function deselectItem(foodCategory) {
     if (selecionado !== null) {
         selecionado.classList.remove('active');
         cont--;
-        console.log(cont);
-
     }
 }
 
@@ -32,17 +28,54 @@ function formatAndSavePrice(item, foodCategory) {
     let valor = item.querySelector('.price h4').innerHTML.slice(3);
 
     if (foodCategory === 'dishes') {
-        priceDishe = parseFloat(valor.replace(',', '.'))
+        priceDishe = parseFloat(valor.replace(',', '.'));
     }else if(foodCategory === 'drinks'){
-        priceDrink = parseFloat(valor.replace(',', '.'))
+        priceDrink = parseFloat(valor.replace(',', '.'));
     }else if(foodCategory === 'desserts'){
-        priceDessert = parseFloat(valor.replace(',', '.'))
+        priceDessert = parseFloat(valor.replace(',', '.'));
     }
-    console.log(foodCategory)
 }
 
 
 function activeButton() {
-    let selecionado = document.querySelector('.button_container')
+    let selecionado = document.querySelector('.button_container');
     selecionado.classList.add('button_active');
+
+    selecionado.querySelector('button').innerHTML = "Fechar pedido";
 }
+
+function sendOrdered() {
+    let ordered = document.querySelectorAll('.active');
+    
+    let dishes = ordered[0].querySelector('h3').innerText;
+    let drinks = ordered[1].querySelector('h3').innerText;
+    let dessert = ordered[2].querySelector('h3').innerText;
+    
+    let total = (priceDessert + priceDishe + priceDrink);    
+    let numeroCelular = 559999999999;
+
+    let mensagem=  `
+    Olá, gostaria de fazer o pedido:
+- Prato: ${dishes}
+- Bebida: ${drinks}
+- Sobremesa: ${dessert}
+Total: R$ ${total}`;
+
+    let mensagemTransformada = encodeURIComponent(mensagem);
+
+    
+    let mensagemWhatsapp = `https://wa.me/${numeroCelular}?text=${mensagemTransformada}`;
+    
+    window.open(mensagemWhatsapp);
+}
+
+// Olá, gostaria de fazer o pedido:
+// - Prato: ${prato1}
+// - Bebida: ${prato2}
+// - Sobremesa: ${prato3}
+// Total: R$ ${total}
+                
+// Nome: ${nomeUsuario}
+// Endereço: ${enderecoUsuario}
+// [5:44 AM]
+// let mensagemWhatsapp = https://wa.me/${numeroCelular}?text=${mensagemTransformada};

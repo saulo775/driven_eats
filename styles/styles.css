@@ -139,6 +139,7 @@ header h4 {
 .button_container button {
     background-color: var(--button-background);
     width: 364px;
+    height: 61px;
 
     padding: 8px;
 
