@@ -21,11 +21,11 @@
     </header>
 
     <main>
-        <section class="options" data-identifier="dishes">
+        <section class="options dishes" data-identifier="dishes">
         <h2>Primeiro, seu prato</h2>
 
             <div class="container">
-                <div class="item active" data-identifier="food-option">
+                <div class="item" onclick="selectItem(this, 'dishes')" data-identifier="food-option">
                     <div>
                         <img src="./assets/frango.png" alt="Frango Yin Yang">
                         <h3 data-identifier="food-title">Frango Yin Yang</h3>
@@ -37,7 +37,7 @@
                     </div>
                 </div>
 
-                <div class="item" data-identifier="food-option">
+                <div class="item" onclick="selectItem(this, 'dishes')" data-identifier="food-option">
                     <div>
                         <img src="./assets/hamburguer.jpg" alt="Hamburguer triplo">
                         <h3 data-identifier="food-title">Hamburguer triplo</h3>
@@ -49,7 +49,7 @@
                     </div>
                 </div>
 
-                <div class="item" data-identifier="food-option">
+                <div class="item" onclick="selectItem(this, 'dishes')" data-identifier="food-option">
                     <div>
                         <img src="./assets/picanha.jpg" alt="Chapa de picanha">
                         <h3 data-identifier="food-title">Chapa de picanha</h3>
@@ -61,7 +61,7 @@
                     </div>
                 </div>
 
-                <div class="item" data-identifier="food-option">
+                <div class="item" onclick="selectItem(this, 'dishes')" data-identifier="food-option">
                     <div>
                         <img src="./assets/saladinha.jpg" alt="Prato de salada">
                         <h3 data-identifier="food-title">Saladinha</h3>
@@ -75,10 +75,10 @@
             </div>
         </section>
 
-        <section class="options" data-identifier="drinks">
+        <section class="options drinks" data-identifier="drinks">
             <h2>Agora, sua bebida</h2>
             <div class="container">
-                <div class="item" data-identifier="food-option">
+                <div class="item" onclick="selectItem(this, 'drinks')" data-identifier="food-option">
                     <div>
                         <img src="./assets/coca.png" alt="coca-cola">
                         <h3 data-identifier="food-title">Pepsi</h3>
@@ -90,7 +90,7 @@
                     </div>
                 </div>
 
-                <div class="item" data-identifier="food-option">
+                <div class="item" onclick="selectItem(this, 'drinks')" data-identifier="food-option">
                     <div>
                         <img src="./assets/drink_morango.jpg" alt="drink morango">
                         <h3 data-identifier="food-title">drink de morango</h3>
@@ -102,7 +102,7 @@
                     </div>
                 </div>
 
-                <div class="item active" data-identifier="food-option">
+                <div class="item" onclick="selectItem(this, 'drinks')" data-identifier="food-option">
                     <div>
                         <img src="./assets/laranja.jpg" alt="suco de laranja">
                         <h3 data-identifier="food-title">Suco de laranja</h3>
@@ -114,7 +114,7 @@
                     </div>
                 </div>
 
-                <div class="item" data-identifier="food-option">
+                <div class="item" onclick="selectItem(this, 'drinks')" data-identifier="food-option">
                     <div>
                         <img src="./assets/suco_morango.jpg" alt="suco de morango">
                         <h3 data-identifier="food-title">Suco de morango</h3>
@@ -129,10 +129,10 @@
             </div>
         </section>
 
-        <section class="options" data-identifier="desserts">
+        <section class="options desserts" data-identifier="desserts">
             <h2>Por fim, sua sobremesa</h2>
             <div class="container">
-                <div class="item" data-identifier="food-option">
+                <div class="item" onclick="selectItem(this, 'desserts')" data-identifier="food-option">
                     <div>
                         <img src="./assets/pudim.png" alt="Pudim">
                         <h3 data-identifier="food-title">Pudim</h3>
@@ -144,7 +144,7 @@
                     </div>
                 </div>
 
-                <div class="item active" data-identifier="food-option">
+                <div class="item" onclick="selectItem(this, 'desserts')" data-identifier="food-option">
                     <div>
                         <img src="./assets/bolo.jpg" alt="Bolo de morango">
                         <h3 data-identifier="food-title">Bolo de murango</h3>
@@ -156,7 +156,7 @@
                     </div>
                 </div>
 
-                <div class="item" data-identifier="food-option">
+                <div class="item" onclick="selectItem(this, 'desserts')" data-identifier="food-option">
                     <div>
                         <img src="./assets/torta.jpg" alt="Torta">
                         <h3 data-identifier="food-title">Torta escocesa</h3>
@@ -168,7 +168,7 @@
                     </div>
                 </div>
 
-                <div class="item" data-identifier="food-option">
+                <div class="item" onclick="selectItem(this, 'desserts')" data-identifier="food-option">
                     <div>
                         <img src="./assets/sorvete.jpg" alt="Sorvete">
                         <h3 data-identifier="food-title">Sorvete</h3>
@@ -192,6 +192,6 @@
     </div>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> 
-    
+    <script src="./scripts/scripts.js"></script>
    </body>
 </html>

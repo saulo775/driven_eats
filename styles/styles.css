@@ -126,6 +126,7 @@ header h4 {
 .button_container {
     flex: 1;
     display: flex;
+    justify-content: center;
     background-color: var(--shape);
 
     padding: 16px 24px;
@@ -136,8 +137,8 @@ header h4 {
 }
 
 .button_container button {
-    flex: 1;
     background-color: var(--button-background);
+    width: 364px;
 
     padding: 8px;
 
