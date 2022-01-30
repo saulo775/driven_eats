@@ -4,12 +4,14 @@
     
     --red: #CF2B2B;
     --green: #32B72F;
+    --secondary-green: #50D074;
 
     --text-title: #333333;
     --text-body: #A6A6A6;
 
 
-    --button-background: #CBCBCB
+    --button-background: #CBCBCB;
+    --modal-background: rgba(255, 255, 255, 0.9)
 }
 
 * {

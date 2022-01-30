@@ -14,184 +14,224 @@
 
     <title>Driven Eats</title>
 </head>
-<body>
-    <header>
-        <h1>DriveEats</h1>
-        <h4>Sua comida em 6 minutos</h4>
-    </header>
 
-    <main>
-        <section class="options dishes" data-identifier="dishes">
-        <h2>Primeiro, seu prato</h2>
+    <body>
+            <header>
+                <h1>DriveEats</h1>
+                <h4>Sua comida em 6 minutos</h4>
+            </header>
 
-            <div class="container">
-                <div class="item" onclick="selectItem(this, 'dishes')" data-identifier="food-option">
-                    <div>
-                        <img src="./assets/frango.png" alt="Frango Yin Yang">
-                        <h3 data-identifier="food-title">Frango Yin Yang</h3>
-                        <p>Um pouco de batata, um pouco de salada</p>
-                    </div>
-                    <div class="price">
-                        <h4 data-identifier="food-price">R$ 14,90</h4>
-                        <ion-icon name="checkmark-circle"></ion-icon>
+            <!-- MODALLLLLLLL -->
+            <!-- MODALLLLLLLL -->
+            <!-- MODALLLLLLLL -->
+            <!-- MODALLLLLLLL -->
+
+            <div class="modal">
+
+                <div class="modalContent">
+                    <div class="confirmOrder" data-identifier="confirmation-dialog">
+                        <h4>Confirme seu pedido</h4>
+                        <div class="priceItem product1">
+                            <h5>Frango Yin Yang</h5>
+                            <h5>14,99</h5>
+                        </div>
+                        <div class="priceItem product2">
+                            <h5>Pepsi gelada</h5>
+                            <h5>4,99</h5>
+                        </div>
+                        <div class="priceItem product3">
+                            <h5>Pudim</h5>
+                            <h5>16,45</h5>
+                        </div>
+                        <div class="total">
+                            <h3>TOTAL</h3>
+                            <h3>R$ 27,90</h3>
+                        </div>
+
+                        <button class="confirmAndSend">Tudo certo, pode pedir!</button>
+                        <button class="cancel">Cancelar</button>
                     </div>
                 </div>
+              
+              </div>
 
-                <div class="item" onclick="selectItem(this, 'dishes')" data-identifier="food-option">
-                    <div>
-                        <img src="./assets/hamburguer.jpg" alt="Hamburguer triplo">
-                        <h3 data-identifier="food-title">Hamburguer triplo</h3>
-                        <p>Um delicioso hamburguer com 3 carnes e cream cheese</p>
+            <!-- MODALLLLLLLL -->
+            <!-- MODALLLLLLLL -->
+            <!-- MODALLLLLLLL -->
+            <!-- MODALLLLLLLL -->
+        
+            <main>
+                <section class="options dishes" data-identifier="dishes">
+                <h2>Primeiro, seu prato</h2>
+        
+                    <div class="container">
+                        <div class="item" onclick="selectItem(this, 'dishes')" data-identifier="food-option">
+                            <div>
+                                <img src="./assets/frango.png" alt="Frango Yin Yang">
+                                <h3 data-identifier="food-title">Frango Yin Yang</h3>
+                                <p>Um pouco de batata, um pouco de salada</p>
+                            </div>
+                            <div class="price">
+                                <h4 data-identifier="food-price">R$ 14,90</h4>
+                                <ion-icon name="checkmark-circle"></ion-icon>
+                            </div>
+                        </div>
+        
+                        <div class="item" onclick="selectItem(this, 'dishes')" data-identifier="food-option">
+                            <div>
+                                <img src="./assets/hamburguer.jpg" alt="Hamburguer triplo">
+                                <h3 data-identifier="food-title">Hamburguer triplo</h3>
+                                <p>Um delicioso hamburguer com 3 carnes e cream cheese</p>
+                            </div>
+                            <div class="price">
+                                <h4 data-identifier="food-price">R$ 25,90</h4>
+                                <ion-icon name="checkmark-circle"></ion-icon>
+                            </div>
+                        </div>
+        
+                        <div class="item" onclick="selectItem(this, 'dishes')" data-identifier="food-option">
+                            <div>
+                                <img src="./assets/picanha.jpg" alt="Chapa de picanha">
+                                <h3 data-identifier="food-title">Chapa de picanha</h3>
+                                <p>Chapa de picanha argentina, no ponto de berro</p>
+                            </div>
+                            <div class="price">
+                                <h4 data-identifier="food-price">R$ 64,50</h4>
+                                <ion-icon name="checkmark-circle"></ion-icon>
+                            </div>
+                        </div>
+        
+                        <div class="item" onclick="selectItem(this, 'dishes')" data-identifier="food-option">
+                            <div>
+                                <img src="./assets/saladinha.jpg" alt="Prato de salada">
+                                <h3 data-identifier="food-title">Saladinha</h3>
+                                <p>Saladinha de gengibre, cenoura e raspas de limão</p>
+                            </div>
+                            <div class="price">
+                                <h4 data-identifier="food-price">R$ 25,90</h4>
+                                <ion-icon name="checkmark-circle"></ion-icon>
+                            </div>
+                        </div>
                     </div>
-                    <div class="price">
-                        <h4 data-identifier="food-price">R$ 25,90</h4>
-                        <ion-icon name="checkmark-circle"></ion-icon>
+                </section>
+        
+                <section class="options drinks" data-identifier="drinks">
+                    <h2>Agora, sua bebida</h2>
+                    <div class="container">
+                        <div class="item" onclick="selectItem(this, 'drinks')" data-identifier="food-option">
+                            <div>
+                                <img src="./assets/coca.png" alt="coca-cola">
+                                <h3 data-identifier="food-title">Pepsi</h3>
+                                <p>Lata 350ml</p>
+                            </div>
+                            <div class="price">
+                                <h4 data-identifier="food-price">R$ 14,90</h4>
+                                <ion-icon name="checkmark-circle"></ion-icon>
+                            </div>
+                        </div>
+        
+                        <div class="item" onclick="selectItem(this, 'drinks')" data-identifier="food-option">
+                            <div>
+                                <img src="./assets/drink_morango.jpg" alt="drink morango">
+                                <h3 data-identifier="food-title">drink de morango</h3>
+                                <p>Drink de morango com balalaika</p>
+                            </div>
+                            <div class="price">
+                                <h4 data-identifier="food-price">R$ 31,50</h4>
+                                <ion-icon name="checkmark-circle"></ion-icon>
+                            </div>
+                        </div>
+        
+                        <div class="item" onclick="selectItem(this, 'drinks')" data-identifier="food-option">
+                            <div>
+                                <img src="./assets/laranja.jpg" alt="suco de laranja">
+                                <h3 data-identifier="food-title">Suco de laranja</h3>
+                                <p>Suco de laranja. Ai que deliciaaa!!!</p>
+                            </div>
+                            <div class="price">
+                                <h4 data-identifier="food-price">R$ 7,90</h4>
+                                <ion-icon name="checkmark-circle"></ion-icon>
+                            </div>
+                        </div>
+        
+                        <div class="item" onclick="selectItem(this, 'drinks')" data-identifier="food-option">
+                            <div>
+                                <img src="./assets/suco_morango.jpg" alt="suco de morango">
+                                <h3 data-identifier="food-title">Suco de morango</h3>
+                                <p>Suco de morango.</p>
+                            </div>
+                            <div class="price">
+                                <h4 data-identifier="food-price">R$ 7,90</h4>
+                                <ion-icon name="checkmark-circle"></ion-icon>
+                            </div>
+                        </div>
+        
                     </div>
-                </div>
-
-                <div class="item" onclick="selectItem(this, 'dishes')" data-identifier="food-option">
-                    <div>
-                        <img src="./assets/picanha.jpg" alt="Chapa de picanha">
-                        <h3 data-identifier="food-title">Chapa de picanha</h3>
-                        <p>Chapa de picanha argentina, no ponto de berro</p>
+                </section>
+        
+                <section class="options desserts" data-identifier="desserts">
+                    <h2>Por fim, sua sobremesa</h2>
+                    <div class="container">
+                        <div class="item" onclick="selectItem(this, 'desserts')" data-identifier="food-option">
+                            <div>
+                                <img src="./assets/pudim.png" alt="Pudim">
+                                <h3 data-identifier="food-title">Pudim</h3>
+                                <p>Apenas pudim</p>
+                            </div>
+                            <div class="price">
+                                <h4 data-identifier="food-price">R$ 14,91</h4>
+                                <ion-icon name="checkmark-circle"></ion-icon>
+                            </div>
+                        </div>
+        
+                        <div class="item" onclick="selectItem(this, 'desserts')" data-identifier="food-option">
+                            <div>
+                                <img src="./assets/bolo.jpg" alt="Bolo de morango">
+                                <h3 data-identifier="food-title">Bolo de murango</h3>
+                                <p>Hummmmmm bolo de murangoooo!!!</p>
+                            </div>
+                            <div class="price">
+                                <h4 data-identifier="food-price">R$ 10,99</h4>
+                                <ion-icon name="checkmark-circle"></ion-icon>
+                            </div>
+                        </div>
+        
+                        <div class="item" onclick="selectItem(this, 'desserts')" data-identifier="food-option">
+                            <div>
+                                <img src="./assets/torta.jpg" alt="Torta">
+                                <h3 data-identifier="food-title">Torta escocesa</h3>
+                                <p>Torta de manteiga escocesa</p>
+                            </div>
+                            <div class="price">
+                                <h4 data-identifier="food-price">R$ 14,93</h4>
+                                <ion-icon name="checkmark-circle"></ion-icon>
+                            </div>
+                        </div>
+        
+                        <div class="item" onclick="selectItem(this, 'desserts')" data-identifier="food-option">
+                            <div>
+                                <img src="./assets/sorvete.jpg" alt="Sorvete">
+                                <h3 data-identifier="food-title">Sorvete</h3>
+                                <p>Apenas sorvete</p>
+                            </div>
+                            <div class="price">
+                                <h4 data-identifier="food-price">R$ 8,55</h4>
+                                
+                                <ion-icon  name="checkmark-circle"></ion-icon>
+                            </div>
+                        </div>
+        
                     </div>
-                    <div class="price">
-                        <h4 data-identifier="food-price">R$ 64,50</h4>
-                        <ion-icon name="checkmark-circle"></ion-icon>
-                    </div>
-                </div>
-
-                <div class="item" onclick="selectItem(this, 'dishes')" data-identifier="food-option">
-                    <div>
-                        <img src="./assets/saladinha.jpg" alt="Prato de salada">
-                        <h3 data-identifier="food-title">Saladinha</h3>
-                        <p>Saladinha de gengibre, cenoura e raspas de limão</p>
-                    </div>
-                    <div class="price">
-                        <h4 data-identifier="food-price">R$ 25,90</h4>
-                        <ion-icon name="checkmark-circle"></ion-icon>
-                    </div>
-                </div>
+                </section>
+            </main>
+        
+            <div class="button_container ">
+                <button onclick="sendOrdered()">
+                    Selecione os 3 itens <br> para fechar o pedido
+                </button>
             </div>
-        </section>
-
-        <section class="options drinks" data-identifier="drinks">
-            <h2>Agora, sua bebida</h2>
-            <div class="container">
-                <div class="item" onclick="selectItem(this, 'drinks')" data-identifier="food-option">
-                    <div>
-                        <img src="./assets/coca.png" alt="coca-cola">
-                        <h3 data-identifier="food-title">Pepsi</h3>
-                        <p>Lata 350ml</p>
-                    </div>
-                    <div class="price">
-                        <h4 data-identifier="food-price">R$ 14,90</h4>
-                        <ion-icon name="checkmark-circle"></ion-icon>
-                    </div>
-                </div>
-
-                <div class="item" onclick="selectItem(this, 'drinks')" data-identifier="food-option">
-                    <div>
-                        <img src="./assets/drink_morango.jpg" alt="drink morango">
-                        <h3 data-identifier="food-title">drink de morango</h3>
-                        <p>Drink de morango com balalaika</p>
-                    </div>
-                    <div class="price">
-                        <h4 data-identifier="food-price">R$ 31,50</h4>
-                        <ion-icon name="checkmark-circle"></ion-icon>
-                    </div>
-                </div>
-
-                <div class="item" onclick="selectItem(this, 'drinks')" data-identifier="food-option">
-                    <div>
-                        <img src="./assets/laranja.jpg" alt="suco de laranja">
-                        <h3 data-identifier="food-title">Suco de laranja</h3>
-                        <p>Suco de laranja. Ai que deliciaaa!!!</p>
-                    </div>
-                    <div class="price">
-                        <h4 data-identifier="food-price">R$ 7,90</h4>
-                        <ion-icon name="checkmark-circle"></ion-icon>
-                    </div>
-                </div>
-
-                <div class="item" onclick="selectItem(this, 'drinks')" data-identifier="food-option">
-                    <div>
-                        <img src="./assets/suco_morango.jpg" alt="suco de morango">
-                        <h3 data-identifier="food-title">Suco de morango</h3>
-                        <p>Suco de morango.</p>
-                    </div>
-                    <div class="price">
-                        <h4 data-identifier="food-price">R$ 7,90</h4>
-                        <ion-icon name="checkmark-circle"></ion-icon>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <section class="options desserts" data-identifier="desserts">
-            <h2>Por fim, sua sobremesa</h2>
-            <div class="container">
-                <div class="item" onclick="selectItem(this, 'desserts')" data-identifier="food-option">
-                    <div>
-                        <img src="./assets/pudim.png" alt="Pudim">
-                        <h3 data-identifier="food-title">Pudim</h3>
-                        <p>Apenas pudim</p>
-                    </div>
-                    <div class="price">
-                        <h4 data-identifier="food-price">R$ 14,91</h4>
-                        <ion-icon name="checkmark-circle"></ion-icon>
-                    </div>
-                </div>
-
-                <div class="item" onclick="selectItem(this, 'desserts')" data-identifier="food-option">
-                    <div>
-                        <img src="./assets/bolo.jpg" alt="Bolo de morango">
-                        <h3 data-identifier="food-title">Bolo de murango</h3>
-                        <p>Hummmmmm bolo de murangoooo!!!</p>
-                    </div>
-                    <div class="price">
-                        <h4 data-identifier="food-price">R$ 10,99</h4>
-                        <ion-icon name="checkmark-circle"></ion-icon>
-                    </div>
-                </div>
-
-                <div class="item" onclick="selectItem(this, 'desserts')" data-identifier="food-option">
-                    <div>
-                        <img src="./assets/torta.jpg" alt="Torta">
-                        <h3 data-identifier="food-title">Torta escocesa</h3>
-                        <p>Torta de manteiga escocesa</p>
-                    </div>
-                    <div class="price">
-                        <h4 data-identifier="food-price">R$ 14,93</h4>
-                        <ion-icon name="checkmark-circle"></ion-icon>
-                    </div>
-                </div>
-
-                <div class="item" onclick="selectItem(this, 'desserts')" data-identifier="food-option">
-                    <div>
-                        <img src="./assets/sorvete.jpg" alt="Sorvete">
-                        <h3 data-identifier="food-title">Sorvete</h3>
-                        <p>Apenas sorvete</p>
-                    </div>
-                    <div class="price">
-                        <h4 data-identifier="food-price">R$ 8,55</h4>
-                        
-                        <ion-icon  name="checkmark-circle"></ion-icon>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-    </main>
-
-    <div class="button_container ">
-        <button onclick="sendOrdered()">
-            Selecione os 3 itens <br> para fechar o pedido
-        </button>
-    </div>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> 
-    <script src="./scripts/scripts.js"></script>
-   </body>
+            <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> 
+            <script src="./scripts/scripts.js"></script>
+        </body>
 </html>

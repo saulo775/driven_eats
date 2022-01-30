@@ -79,3 +79,4 @@ Total: R$ ${total}`;
 // Endereço: ${enderecoUsuario}
 // [5:44 AM]
 // let mensagemWhatsapp = https://wa.me/${numeroCelular}?text=${mensagemTransformada};
+

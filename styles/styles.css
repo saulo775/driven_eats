@@ -6,8 +6,83 @@ body {
     background-color: var(--background);
     
     position: relative;
-    border: 2px solid black;
+    border: 1px solid var(--text-body);
 }
+
+.modal {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    background-color: var(--modal-background);
+}
+.modalContent {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 630px;
+}
+
+.confirmOrder {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    max-width: 377px;
+
+    margin: 0 16px;
+    padding: 0 25px;
+    color: var(--shape);
+    background-color: var(--secondary-green);
+
+    border-radius: 8px;
+}
+
+.confirmOrder h4 {
+    margin: 21px 0 28px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.confirmOrder div {
+    display: flex;
+    justify-content: space-between;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.confirmOrder div + div {
+    margin-top: 12px;
+}
+
+.total h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.confirmOrder button {
+    border-radius: 32px;
+    border: none;
+    height: 52px;
+
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.confirmOrder .confirmAndSend {
+    color: var(--secondary-green);
+}
+
+.confirmOrder .cancel {
+    background-color: var(--secondary-green);
+    color: var(--shape);
+}
+
 
 header {
     flex: 1;
@@ -105,6 +180,7 @@ header h4 {
 
 .active {
     border: 5px solid var(--green);
+    transition: 300ms;
 }
 
 .price {
@@ -154,3 +230,5 @@ header h4 {
 .button_active button{
     background-color: var(--green);
 }
+
+
