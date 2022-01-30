@@ -107,7 +107,7 @@ header h4 {
 
 .active {
     border: 5px solid var(--green);
-    transition: 300ms;
+    transition: 400ms;
 }
 
 .price {

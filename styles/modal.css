@@ -49,6 +49,11 @@
     font-weight: 400;
 }
 
+.confirmOrder h6 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
 .confirmOrder div + div {
     margin-top: 12px;
 }

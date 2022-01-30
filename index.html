@@ -22,44 +22,35 @@
         <h4>Sua comida em 6 minutos</h4>
     </header>
 
-    <!-- MODALLLLLLLL -->
-    <!-- MODALLLLLLLL -->
-    <!-- MODALLLLLLLL -->
-    <!-- MODALLLLLLLL -->
-
+    <!-- MODAL -->
+    <!-- MODAL -->
     <div  class="modal">
-
         <div class="modalContent">
             <div class="confirmOrder" data-identifier="confirmation-dialog">
                 <h4>Confirme seu pedido</h4>
                 <div class="priceItem product1">
                     <h5>Frango Yin Yang</h5>
-                    <h5>14,99</h5>
+                    <h6>14,99</h6>
                 </div>
                 <div class="priceItem product2">
                     <h5>Pepsi gelada</h5>
-                    <h5>4,99</h5>
+                    <h6>4,99</h6>
                 </div>
                 <div class="priceItem product3">
                     <h5>Pudim</h5>
-                    <h5>16,45</h5>
+                    <h6>16,45</h6>
                 </div>
                 <div class="total">
                     <h3>TOTAL</h3>
-                    <h3>R$ 27,90</h3>
+                    <h3 class="finalPrice">R$ 27,90</h3>
                 </div>
 
-                <button class="confirmAndSend">Tudo certo, pode pedir!</button>
+                <button class="confirmAndSend" onclick="sendOrdered()">Tudo certo, pode pedir!</button>
                 <button class="cancel" onclick="closeModal()">Cancelar</button>
             </div>
         </div>
         
         </div>
-
-    <!-- MODALLLLLLLL -->
-    <!-- MODALLLLLLLL -->
-    <!-- MODALLLLLLLL -->
-    <!-- MODALLLLLLLL -->
 
     <main>
         <section class="options dishes" data-identifier="dishes">
@@ -73,7 +64,7 @@
                         <p>Um pouco de batata, um pouco de salada</p>
                     </div>
                     <div class="price">
-                        <h4 data-identifier="food-price">R$ 14,90</h4>
+                        <h4 data-identifier="food-price">R$ 14,92</h4>
                         <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
                 </div>
@@ -85,7 +76,7 @@
                         <p>Um delicioso hamburguer com 3 carnes e cream cheese</p>
                     </div>
                     <div class="price">
-                        <h4 data-identifier="food-price">R$ 25,90</h4>
+                        <h4 data-identifier="food-price">R$ 25,99</h4>
                         <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
                 </div>
@@ -97,7 +88,7 @@
                         <p>Chapa de picanha argentina, no ponto de berro</p>
                     </div>
                     <div class="price">
-                        <h4 data-identifier="food-price">R$ 64,50</h4>
+                        <h4 data-identifier="food-price">R$ 64,59</h4>
                         <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
                 </div>
@@ -109,7 +100,7 @@
                         <p>Saladinha de gengibre, cenoura e raspas de limão</p>
                     </div>
                     <div class="price">
-                        <h4 data-identifier="food-price">R$ 25,90</h4>
+                        <h4 data-identifier="food-price">R$ 25,99</h4>
                         <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
                 </div>
@@ -126,7 +117,7 @@
                         <p>Lata 350ml</p>
                     </div>
                     <div class="price">
-                        <h4 data-identifier="food-price">R$ 14,90</h4>
+                        <h4 data-identifier="food-price">R$ 14,99</h4>
                         <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
                 </div>
@@ -138,7 +129,7 @@
                         <p>Drink de morango com balalaika</p>
                     </div>
                     <div class="price">
-                        <h4 data-identifier="food-price">R$ 31,50</h4>
+                        <h4 data-identifier="food-price">R$ 31,59</h4>
                         <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
                 </div>
@@ -150,7 +141,7 @@
                         <p>Suco de laranja. Ai que deliciaaa!!!</p>
                     </div>
                     <div class="price">
-                        <h4 data-identifier="food-price">R$ 7,90</h4>
+                        <h4 data-identifier="food-price">R$ 7,99</h4>
                         <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
                 </div>
@@ -162,7 +153,7 @@
                         <p>Suco de morango.</p>
                     </div>
                     <div class="price">
-                        <h4 data-identifier="food-price">R$ 7,90</h4>
+                        <h4 data-identifier="food-price">R$ 7,99</h4>
                         <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
                 </div>
@@ -227,7 +218,7 @@
     </main>
 
     <div class="button_container ">
-        <button onclick="activateConfimationModal()">
+        <button class="button_sendRequest" onclick="activeModal()">
             Selecione os 3 itens <br> para fechar o pedido
         </button>
     </div>
