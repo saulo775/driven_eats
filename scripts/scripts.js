@@ -23,7 +23,6 @@ function deselectItem(foodCategory) {
     }
 }
 
-
 function formatAndSavePrice(item, foodCategory) {
     let valor = item.querySelector('.price h4').innerHTML.slice(3);
 
@@ -36,12 +35,19 @@ function formatAndSavePrice(item, foodCategory) {
     }
 }
 
-
 function activeButton() {
     let selecionado = document.querySelector('.button_container');
     selecionado.classList.add('button_active');
 
     selecionado.querySelector('button').innerHTML = "Fechar pedido";
+
+    activateConfimationModal();
+    
+}
+
+function activateConfimationModal() {
+    let modal = document.querySelector('.modal');
+    modal.classList.add('activeModal');
 }
 
 function sendOrdered() {
@@ -67,6 +73,15 @@ Total: R$ ${total}`;
     let mensagemWhatsapp = `https://wa.me/${numeroCelular}?text=${mensagemTransformada}`;
     
     window.open(mensagemWhatsapp);
+}
+
+function closeModal() {
+    let selected = document.querySelector(".activeModal");
+
+    if (selected !== null) {
+        selected.classList.remove("activeModal")
+    }
+
 }
 
 // Olá, gostaria de fazer o pedido:
